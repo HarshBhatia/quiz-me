@@ -5,13 +5,14 @@ export interface Score {
 
 export interface Option {
   optionText: string;
-  id: string;
+  _id: string;
 }
 
 export interface Question {
   id: string;
   options: Option[];
   questionText: string;
+  rightOption: string;
 }
 
 export interface Quiz {

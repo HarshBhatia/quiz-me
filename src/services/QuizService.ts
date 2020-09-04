@@ -1,8 +1,8 @@
-import { ApiServiceInterface } from "./ApiServiceInterface";
+import { QuizServiceInterface } from "./QuizServiceInterface";
 
 const API_URL: string = "https://66a8ddab713f.ngrok.io";
 
-const Api: ApiServiceInterface = {
+const QuizService: QuizServiceInterface = {
   getQuiz: async (id) => {
     const response = await fetch(`${API_URL}/quizzes/${id}`);
     const quiz = await response.json();
@@ -21,4 +21,4 @@ const Api: ApiServiceInterface = {
   },
 };
 
-export default Api;
+export default QuizService;

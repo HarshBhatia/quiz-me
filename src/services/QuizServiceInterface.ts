@@ -1,6 +1,6 @@
 import { Quiz, Score } from "./QuizInterface";
 
-export interface ApiServiceInterface {
+export interface QuizServiceInterface {
   // getQuizzes: () => Promise<Array<Quiz>>;
 
   getQuiz: (id: string) => Promise<Quiz>;
